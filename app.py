@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 import numpy as np
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 model = load_model('myMLmodel')
 cols = ['Carat Weight', 'Cut', 'Color', 'Clarity', 'Polish', 'Symmetry', 'Report']
